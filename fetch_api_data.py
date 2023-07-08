@@ -8,7 +8,7 @@ url = "https://weatherapi-com.p.rapidapi.com/current.json"
 querystring = {"q": "London"}
 
 headers = {
-    "X-RapidAPI-Key": "be4d7396b7msh753fc596e82d2d8p139902jsn3e1a09a140bb",
+    "X-RapidAPI-Key": "<your api key>",
     "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
 }
 
