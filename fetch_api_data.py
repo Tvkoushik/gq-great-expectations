@@ -5,11 +5,11 @@ import os
 
 url = "https://weatherapi-com.p.rapidapi.com/current.json"
 
-querystring = {"q":"London"}
+querystring = {"q": "London"}
 
 headers = {
-	"X-RapidAPI-Key": "be4d7396b7msh753fc596e82d2d8p139902jsn3e1a09a140bb",
-	"X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com"
+    "X-RapidAPI-Key": "be4d7396b7msh753fc596e82d2d8p139902jsn3e1a09a140bb",
+    "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
 }
 
 response = requests.get(url, headers=headers, params=querystring)
@@ -23,12 +23,14 @@ print(data)
 # Flatten the dictionary
 flattened_dict = {}
 
-def flatten_dict(dictionary, prefix=''):
+
+def flatten_dict(dictionary, prefix=""):
     for key, value in dictionary.items():
         if isinstance(value, dict):
-            flatten_dict(value, prefix + key + '_')
+            flatten_dict(value, prefix + key + "_")
         else:
             flattened_dict[prefix + key] = value
+
 
 flatten_dict(data)
 
