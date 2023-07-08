@@ -1,0 +1,10 @@
+FILE_NAME,COLUMN_NAME,TEST_TYPE,TEST_STATUS,TOTAL_EVALUATIONS,EVALUATIONS_PASSED,EVALUATIONS_FAILED,SUCCESS_RATIO,VALIDATION_TIME,CURRENT_TIME
+stock_prices_valid.csv,date,expect_column_to_exist,True,3,3,0,100.0,20230708T051205.447254Z,08/07/2023 10:42:05
+stock_prices_valid.csv,close_price,expect_column_values_to_be_between,True,3,3,0,100.0,20230708T051205.447254Z,08/07/2023 10:42:05
+stock_prices_valid.csv,sym,expect_column_values_to_be_in_set,True,3,3,0,100.0,20230708T051205.447254Z,08/07/2023 10:42:05
+stock_prices_invalid.csv,date,expect_column_to_exist,True,3,1,2,33.33333333333333,20230708T051205.450075Z,08/07/2023 10:42:05
+stock_prices_invalid.csv,close_price,expect_column_values_to_be_between,False,3,1,2,33.33333333333333,20230708T051205.450075Z,08/07/2023 10:42:05
+stock_prices_invalid.csv,sym,expect_column_values_to_be_in_set,False,3,1,2,33.33333333333333,20230708T051205.450075Z,08/07/2023 10:42:05
+weather_data.csv,location_name,expect_column_to_exist,True,3,1,2,33.33333333333333,20230708T051205.452994Z,08/07/2023 10:42:05
+weather_data.csv,location_lat,expect_column_values_to_be_between,False,3,1,2,33.33333333333333,20230708T051205.452994Z,08/07/2023 10:42:05
+weather_data.csv,sym,current_condition_text,False,3,1,2,33.33333333333333,20230708T051205.452994Z,08/07/2023 10:42:05

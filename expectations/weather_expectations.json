@@ -1,0 +1,34 @@
+{
+    "data_asset_type": "Dataset",
+    "expectation_suite_name": "default",
+    "expectations": [
+      {
+        "expectation_type": "expect_column_to_exist",
+        "kwargs": {
+          "column": "location_name"
+        },
+        "meta": {}
+      },
+      {
+        "expectation_type": "expect_column_values_to_be_between",
+        "kwargs": {
+          "column": "location_lat",
+          "min_value": 0,
+          "max_value": 30
+        },
+        "meta": {}
+      },
+      {
+        "expectation_type": "current_condition_text",
+        "kwargs": {
+          "column": "sym",
+          "value_set":["Sunny","Foggy","Clear","Windy"]
+        },
+        "meta": {}
+      }
+    ],
+    "ge_cloud_id": null,
+    "meta": {
+      "great_expectations_version": "0.15.49"
+    }
+  }

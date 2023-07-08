@@ -1,0 +1,4 @@
+data_file_path,expectation_file_path
+/Users/koushikthota/Desktop/Code/dataQualityFramework/data/stock_prices_valid.csv,/Users/koushikthota/Desktop/Code/dataQualityFramework/expectations/config.json
+/Users/koushikthota/Desktop/Code/dataQualityFramework/data/stock_prices_invalid.csv,/Users/koushikthota/Desktop/Code/dataQualityFramework/expectations/config.json
+/Users/koushikthota/Desktop/Code/dataQualityFramework/data/weather_data.csv,/Users/koushikthota/Desktop/Code/dataQualityFramework/expectations/weather_expectations.json
